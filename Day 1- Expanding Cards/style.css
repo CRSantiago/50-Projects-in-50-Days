@@ -25,7 +25,7 @@ body {
   background-repeat: no-repeat;
   height: 80vh;
   border-radius: 50px;
-  color: white;
+  color: black;
   cursor: pointer;
   flex: 0.5;
   margin: 10px;
@@ -40,6 +40,12 @@ body {
   left: 20px;
   margin: 0;
   opacity: 0;
+}
+
+.panel:nth-child(2),
+.panel:nth-child(3),
+.panel:nth-child(5) {
+  color: white;
 }
 
 .panel.active {
