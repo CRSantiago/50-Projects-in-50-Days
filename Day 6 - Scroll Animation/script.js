@@ -5,11 +5,12 @@ window.addEventListener('scroll', checkBoxes)
 checkBoxes()
 
 function checkBoxes() {
-    const triggerBottom = window.innerHeight / 5 * 4
-    console.log(triggerBottom)
+    // 80% of the window height, in order to trigger event.
+    const triggerBottom = window.innerHeight * 0.8
+    
     boxes.forEach(box => {
         const boxTop = box.getBoundingClientRect().top
-        console.log(boxTop)
+        
         if(boxTop < triggerBottom) {
             box.classList.add('show')
         } else {
